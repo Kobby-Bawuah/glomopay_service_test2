@@ -1,6 +1,5 @@
 name: CI
 
-# Trigger the workflow on push to main branch
 on:
   push:
     branches:
@@ -29,9 +28,9 @@ jobs:
       run: |
         python -m venv venv
         ./venv/bin/python -m pip install --upgrade pip
-        ./venv/bin/python -m pip install pytest pytest-cov coverage
+        ./venv/bin/python -m pip install -r requirements.txt
 
-    # Step 4: Run tests with coverage
+    # Step 4: Run tests and generate coverage report
     - name: Run tests and generate coverage report
       run: |
         ./venv/bin/python -m pytest --cov=src --cov-report=xml
