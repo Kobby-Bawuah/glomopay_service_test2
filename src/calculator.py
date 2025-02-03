@@ -1,5 +1,5 @@
 def add(a, b):
-    print("Adding numbers")
+    print("Testing Codecov comments")  # Temporary change for testing
     return a + b
 
 def multiply(a, b):
