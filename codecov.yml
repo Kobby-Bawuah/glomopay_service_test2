@@ -1,0 +1,10 @@
+comment: false  # Disable PR comments from Codecov
+
+coverage:
+  status:
+    project:
+      default:
+        enabled: false  # Disable project-level status check
+    patch:
+      default:
+        enabled: false  # Disable patch-level status check
